@@ -11,6 +11,7 @@ function updateimg($date,$filename){
 }
 function commenup($date,$filename){
             $path=dirname(__FILE__)."/../img/head/";
+        if (!file_exists( $path)){ mkdir ($path);///如果head目录不存在则创建2016.1.31 by Lindalee
             //允许上传的文件格式 
         $tp = array("image/pjpeg","image/jpeg","image/png"); 
         //检查上传文件是否在允许上传的类型 
